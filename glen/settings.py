@@ -122,4 +122,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # custome settings
-STATIC_ROOT = 'static'
+STATIC_ROOT = ''
