@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    color: rgb(4, 248, 126);
+    width: 2em;
+    background-color: color: rgb(4, 248, 126);;
+  }
+  
+  body {
+    font-family: monospace;
+    background-color: whitesmoke;
+    margin: 0;
+  }
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em;
+}
+
+header > a {
+    text-decoration: none;
+    color: rgb(0, 255, 242);
+    font-size: 1.5em;
+}
+
+.title-c {
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: rgb(75, 75, 75);
+    border-bottom: 3px dotted rgb(0, 217, 255);
+    word-wrap: break-word;
+}
+
+.post-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.post-container > p {
+    font-size: 1.5em;
+}
+
+.form-container {
+    margin: 10em;
+}
+
+.submit-btn {
+    background-color: khaki;
+    border: solid;
+    border-color: transparent;
+    color: rgb(48, 48, 48);
+}
+
+.comments-container {
+    margin: 1em;
+}
+
+.comment-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: khaki;
+    border-color: white;
+    padding: 5%;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.commenter-name {
+    color: lightcoral;
+}

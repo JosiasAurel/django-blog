@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Glen Mue</title>
+</head>
+<body>
+    <main>
+        <a class="name">Hi, I'm Glen Mue</a>
+        <h3>
+            I am passionate about all things Physics, Maths, and Computer.
+    </main>
+
+    <div class="posts-container">
+        {% for post in posts %}
+        <div class="post-card">
+            <h2>{{ post.title }}</h2>
+            <a href="{% url 'blog_post' post.pk %}" class="read-link">Read</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <h2>Copyright 2020 Glen Mue - Made <> by Josias Aurel</h2>
+    </footer>
+</body>
+</html>
