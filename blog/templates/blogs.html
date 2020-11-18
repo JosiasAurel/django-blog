@@ -48,7 +48,7 @@
         {% for comment in comments %}
         <span class="comment-card">
             <h3> <h3 class="commenter-name">{{ comment.author }}</h3> on {{ comment.created_on }}</h3>
-            <h3>{{ comment.body }}</h3>
+            <h3 class="cmtb">{{ comment.body }}</h3>
         </span>
         {% endfor %}
     </div>
@@ -84,6 +84,7 @@ header > a {
 .title-c {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .title{
@@ -131,6 +132,20 @@ header > a {
 
 .commenter-name {
     color: lightcoral;
+}
+
+.cmtb {
+	word-wrap: break-word;
+}
+
+h2 {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.form-container {
+		margin: 5px;
+	}
 }
 </style>
    
